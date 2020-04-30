@@ -1,0 +1,77 @@
+# CARA KONFIGURASI TOKO ONLINE BUNTOMART
+
+## Database
+1. Buat database dengan nama bebas, lalu export file bernama olshop.sql
+2. Buka file database yang berada di folder application/config/ lalu ubah setingan databasenya
+
+## Config
+1. Buka file config yang berada di application/config/
+2. Ubah 'Buntomart' dengan nama toko online Anda
+3. Value dari $config['navbar_color'] adalah setingan warna untuk navbar toko online, silakan ubah kode heksa'nya saja, !important jangan dihapus
+4. Ubah value dari whatsapp dengan nomor whatsapp Anda,wajib whatsapp
+5. Ubah value dari whatsappv2 dengan nomor whatsapp Anda, bedanya adalah kalo whatsapp format angkanya 08xx, tapi kalo whatsappv2 format angkanya adalah 628xx
+6. Ubah value dari email_contact dengan email Anda, email ini nantinya akan dimunculkan di footer toko online Anda
+7. Scroll kebawah, pada base_url ubah value'nya dengan domain Anda. Contoh https://tokoonlinebaju.com/
+
+## Raja Ongkir
+Rajaongkir disini fungsinya adalah untuk menghitung biaya ongkos kirim sesuai.
+1. Buka link https://rajaongkir.com/akun/daftar lalu daftar seperti biasa
+2. Silakan verifikasi email Anda jika diminta untuk verifikasi email
+3. Buka panel pada web rajaongkir, atau bisa ke link https://rajaongkir.com/akun/panel
+4. Copy API Key yang tertera
+5. Buka file config yang ada di folder application/config/
+6. Paste API Key yang tadi disalin ke dalam <API Key> pada value api_rajaongkir
+
+## Gmail
+1. Untuk setting gmail silakan buka file gmail yang ada di folder panduan
+2. Setelah mengikuti langkah-langkahnya, selanjutnya buka file config yang ada di folder application/config
+3. Ubah account_gmail dengan email Anda, misal tokoonline@gmail.com
+4. Ubah pass_gmail dengan password gmail Anda
+
+
+# HALAMAN ADMIN
+
+## Login
+1. Langsung buka aja halaman admin dengan masuk ke administrator, misal domain.com/administrator
+2. Akan disuguhkan halaman login, masukan username: admin dan password: admin
+
+## Dashboard
+Halaman dashboard akan ditampilkan pertama kali ketika admin masuk ke admin panel
+
+## Pesanan
+Di menu pesanan, admin akan melihat semua pesanan atau orderan yang masuk
+
+## Kirim Email
+Admin dapat mengirimkan email seperti informasi/promo yang ada/yang lain kepada subscriber yang subscribe ke situs toko online ini.
+
+## Kategori
+Kita semua pasti sudah tau ini fungsinya apa. Di menu kategori ini harus memasukan icon kategorinya (wajib).
+
+## Produk
+- Di menu produk, admin dapat menambah produk baru. Saat akan menambah produk baru, admin dapat menentukan apakah subscriber atau yang berlangganan situs ini akan mendapatkan notifikasi mengenai produk yang baru saja ditambah atau tidak.
+- Ketika admin memilih untuk mengirim notifikasi email maka proses Unggah Produk akan sedikit lebih lama.
+
+## Promo
+- Admin dapat menentukan apakah akan mengaktifkan promo atau tidak.
+- Lalu admin harus set waktu kapan promo itu akan berakhir
+
+## Testimoni
+Admin dapat menambahkan testimoni dari pembeli
+
+## Halaman
+Di menu halaman, admin bisa menambah atau mengubah konten dari halaman khusus seperti halaman tentang kamu, kontak, kebijakan, dll.
+
+## Pengaturan
+Ada 6 pilihan ketika admin masuk ke menu pengatuan.
+1. Banner slider dari situs toko online dapat ditambah dan diganti pada menu Banner Slider. Perhatian! Ukuran banner harus 1600x400 pixel. Silakan edit menggunakan aplikasi seperti photoshop dan export ke format png/jpg
+2. Deskripsi singkat mengenai toko online Anda, ini akan dimunculkan pada bagian footer situs
+3. Silakan masukan nomor rekening Anda di di menu Rekening, nomor rekening akan ditampilkan kepada pembeli yang melakukan pembelian produk
+4. Silakan masukan sosial media Anda pada menu Sosial Media, untuk icon bisa didapatkan di fontawesome.com/icons. Sosial Media ini akan ditampilkan pada footer situs dibawah deskripsi singkat.
+5. Alamat: Anda harus memasukan 2 alamat. Yang pertama adalah alamat lengkap, dan kedua adalah kabupaten Anda. Untuk alamat lengkap akan ditampilkan di footer situs
+6. Footer: Setingan ini adalah untuk menambahkan navigasi link pada footer Anda seperti Link untuk masuk ke halaman Tentang, Kontak, dll.
+
+## Edit Admin
+Untuk mengubah username dan password admin silakan klik "Login sebagai Admin" di pojok kanan atas, lalu klik Edit Profil
+
+
+Demikian panduan untuk website toko online. Jika ada pertanyaan lebih lanjut silakan hubungi Whatsapp 088215005600
