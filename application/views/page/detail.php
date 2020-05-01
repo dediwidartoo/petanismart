@@ -79,7 +79,7 @@
                 </table>
                 <hr>
                 <button class="btn btn-warning pl-5 pr-5" onclick="buy()">Beli</button>
-                <button class="btn btn-primary" onclick="addCart()">Tambah ke Keranjang</button>
+                <button class="btn btn-success" onclick="addCart()">Tambah ke Keranjang</button>
             </div>
         </div>
     </div>

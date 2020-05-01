@@ -2,7 +2,7 @@
     <div class="navigation">
         <a href="<?= base_url(); ?>">Home</a>
         <i class="fa fa-caret-right"></i>
-        <a>Troli</a>
+        <a>Keranjang</a>
     </div>
     <div class="core mt-4">
         <div class="product">
@@ -16,13 +16,13 @@
                     <h3 class="price mt-0">Rp <?= number_format($item['subtotal'],0,",","."); ?></h3>
                     <div class="clearfix"></div>
                 </div>
-                <a href="<?= base_url(); ?>cart/delete/<?= $item['rowid']; ?>" onclick="return confirm('Yakin ingin menghapus produk ini dari troli?')"><i class="fa fa-trash"></i></a>
+                <a href="<?= base_url(); ?>cart/delete/<?= $item['rowid']; ?>" onclick="return confirm('Yakin ingin menghapus produk ini dari keranjang?')"><i class="fa fa-trash"></i></a>
             </div>
             <hr>
             <?php endforeach; ?>
-            <a href="<?= base_url(); ?>cart/delete_cart" onclick="return confirm('Apakah Anda yakin akan mengosongkan Troli?')"><button class="btn btn-outline-dark">Kosongkan Troli</button></a>
+            <a href="<?= base_url(); ?>cart/delete_cart" onclick="return confirm('Apakah Anda yakin akan membuang isi keranjangmu?')"><button class="btn btn-outline-dark">Kosongkan keranjang</button></a>
             <?php }else{ ?>
-                <div class="alert alert-warning">Upss. Troli masih kosong. Yuk belanja terlebih dahulu..</div>
+                <div class="alert alert-warning">Upss. Keranjangmu masih kosong. Yuk belanja terlebih dahulu..</div>
                 <br><br><br>
             <?php } ?>
         </div>
@@ -39,11 +39,11 @@
             </div>
             <?php if($this->cart->total_items() > 0){ ?>
                 <a href="<?= base_url(); ?>payment">
-                    <button class="btn btn-dark btn btn-block mt-2">Lanjut ke Pembayaran</button>
+                    <button class="btn btn-warning btn btn-block mt-2">Lanjutkan Pesanan</button>
                 </a>
             <?php }else{ ?>
                 <a href="<?= base_url(); ?>">
-                    <button class="btn btn-dark btn btn-block mt-2">Belanja Dulu</button>
+                    <button class="btn btn-warning btn btn-block mt-2">Belanja Dulu</button>
                 </a>
             <?php } ?>
         </div>

@@ -13,7 +13,7 @@
                 <tr>
                     <td># <?= $item['name']; ?></td>
                     <td class="text-center"><?= $item['qty']; ?></td>
-                    <td>Rp<?= number_format($item['subtotal'],0,",","."); ?></td>
+                    <td>Rp. <?= number_format($item['subtotal'],0,",","."); ?></td>
                 </tr>
                 <?php endforeach; ?>
             </table>
@@ -26,7 +26,7 @@
                 <div class="col-lg-6">
                     <div class="form-group">
                         <label for="label">Alamat Sebagai</label>
-                        <input type="text" id="label" autocomplete="off" class="form-control" placeholder="Contoh: Rumah, Kantor, Kos, dll" required name="label">
+                        <input type="text" id="label" autocomplete="off" class="form-control" placeholder="Contoh: Rumah, Kos, Sawah dll" required name="label">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -47,7 +47,7 @@
                 <div class="col-lg-6">
                     <div class="form-group">
                         <label for="telp">Nomor Telepon</label>
-                        <input type="number" id="telp" autocomplete="off" class="form-control" required name="telp">
+                        <input type="number" id="telp" autocomplete="off" min="0" class="form-control" required name="telp">
                         <small class="text-muted">Contoh: 081234567890</small>
                     </div>
                 </div>
@@ -132,7 +132,7 @@
             <p id="paymentTotalAll">Rp<?= number_format($this->cart->total(),0,",","."); ?></p>
         </div>
         <?php if($this->cart->total_items() > 0){ ?>
-            <button class="btn btn-dark btn btn-block mt-2" id="btnPaymentNow" type="submit">Bayar Sekarang</button>
+            <button class="btn btn-success btn btn-block mt-2" id="btnPaymentNow" type="submit">Pesan Sekarang</button>
         <?php }else{ ?>
             <div class="alert mt-2 alert-warning">Keranjangmu masih kosong.</div>
             <a href="<?= base_url(); ?>">

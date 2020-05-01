@@ -57,7 +57,7 @@ $rekening = $this->db->get('rekening');
                     <p><?= nl2br($setting['address']); ?></p>
                 </div>
                 <div class="item">
-                    <i class="fa fa-phone"></i>
+                    <i class="fa fa-whatsapp"></i>
                     <p><?= $this->config->item('whatsapp'); ?></p>
                 </div>
                 <div class="item">
@@ -68,6 +68,9 @@ $rekening = $this->db->get('rekening');
         </div>
         <div class="copyright">
             <p>Copyright &copy; <span id="footer-cr-years"></span> <?= $this->config->item('app_name'); ?>. All Right Reserved.</p>
+            <div class="love">
+                <p>Dibuat dengan <span id="love">&#10084</span> di Jepara</p>
+            </div>
         </div>
         </footer>
 

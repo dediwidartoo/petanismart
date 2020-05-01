@@ -62,7 +62,7 @@ div.clearfix {
 }
 
 div.wrapper div.core div.product div.item h3.price {
-	color: tomato;
+	color: #ff6300;
 	font-family: "Nunito";
 	font-size: 18px;
 	font-weight: 700;

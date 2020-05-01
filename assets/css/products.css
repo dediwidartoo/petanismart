@@ -83,7 +83,7 @@ div.wrapper div.core div.filter div.bodf a {
 }
 
 div.wrapper div.core div.filter div.bodf a:hover {
-	color: #008cd7;
+	color: #84b70c;
 }
 
 div.wrapper div.core div.main-product {
@@ -103,7 +103,7 @@ div.wrapper div.core div.main-product div.card {
 }
 
 div.wrapper div.core div.main-product div.card:hover div.card-body p.card-text {
-	color: #008cd7;
+	color: #84b70c;
 }
 
 div.wrapper div.core div.main-product div.card div.card-body {
@@ -130,7 +130,7 @@ div.wrapper div.core div.main-product div.card div.card-body p.oldPrice {
 }
 
 div.wrapper div.core div.main-product div.card div.card-body p.newPrice {
-	color: #2c598a;
+	color: #177007;
 	font-family: "Nunito";
 	font-size: 15px;
 	font-weight: 600;

@@ -215,7 +215,7 @@ footer div.information div.main div.about div.sosmed a {
 }
 
 footer div.information div.main div.about div.sosmed a:hover {
-	color: #009479;
+	color: #84b70c;
 }
 
 footer div.information div.main div.item h3.title {
@@ -237,7 +237,7 @@ footer div.information div.main div.item p {
 }
 
 footer div.information div.main div.item a:hover {
-	color: #009479;
+	color: #84b70c;
 }
 
 footer div.contact {
@@ -298,6 +298,20 @@ footer div.copyright p {
 	left: 50%;
 	transform: translate(-50%, 0);
 	text-align: center;
+}
+
+footer div.copyright div.love p {
+	color: #eee;
+	font-family: "Open Sans";
+	font-size: 13px;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+	text-align: center;
+}
+
+footer div.copyright div.love p span#love {
+	color: #ffd100;
 }
 
 nav.navbar div.container div.form {

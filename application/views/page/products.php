@@ -27,8 +27,8 @@
                     </p>
                     <small class="text-muted">Tulis tanpa tanda pemisah, cth: 34000</small>
                     <form action="<?= base_url(); ?>products" method="get">
-                        <input type="number" placeholder="Harga Minimum" name="minprice" class="form-control">
-                        <input type="number" placeholder="Harga Maksimum" name="maxprice" class="form-control mt-2">
+                        <input type="number" placeholder="Harga Minimum" name="minprice" min="0" class="form-control">
+                        <input type="number" placeholder="Harga Maksimum" name="maxprice" min="0" class="form-control mt-2">
                         <button type="submit" class="btn btn-secondary btn-block btn-sm mt-2">Terapkan</button>
                     </form>
                     <hr>

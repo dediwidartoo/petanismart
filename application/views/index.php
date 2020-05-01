@@ -45,7 +45,7 @@
 <?php if($setting['promo'] == 1){ ?>
 <div class="promo">
   <div class="card-header">
-    <p class="lead text-light"><i class="fa fa-fire-alt"></i> Berakhir dalam <span id="countdownPromo"></span></p>
+    <p class="lead text-light"><i class="fa fa-flash"></i> Berakhir dalam <span id="countdownPromo"></span></p>
     <a href="<?= base_url(); ?>promo"><button class="float-right">Lihat Semua</button></a>
   </div>
   <div class="bottom">
@@ -71,38 +71,8 @@
 <?php } ?>
 
 <?php if($best->num_rows() > 0){ ?>
-<div class="product-wrapper best-product">
-  <h2 class="title">Produk terlaris</h2>
-  <hr>
-  <div class="recent-product main-product">
-  <?php foreach($best->result_array() as $p): ?>
-    <div>
-        <a href="<?= base_url(); ?>p/<?= $p['slug']; ?>">
-          <div class="card">
-            <img src="<?= base_url(); ?>assets/images/product/<?= $p['img']; ?>" class="card-img-top" >
-            <div class="card-body">
-              <p class="card-text mb-0"><?= $p['title']; ?></p>
-              <?php if($setting['promo'] == 1){ ?>
-              <?php if($p['promo_price'] == 0){ ?>
-                    <p class="newPrice">Rp <?= str_replace(",",".",number_format($p['price'])); ?></p>
-                <?php }else{ ?>
-                    <p class="oldPrice mb-0">Rp <?= str_replace(",",".",number_format($p['price'])); ?></p>
-                    <p class="newPrice">Rp <?= str_replace(",",".",number_format($p['promo_price'])); ?></p>
-                <?php } ?>
-                <?php }else{ ?>
-                    <p class="newPrice">Rp <?= str_replace(",",".",number_format($p['price'])); ?></p>
-                <?php } ?>
-            </div>
-          </div>
-        </a>
-    </div>
-  <?php endforeach; ?>
-  </div>
-</div>
-<?php } ?>
-
-<div class="product-wrapper">
-  <h2 class="title">Produk terbaru</h2>
+  <div class="product-wrapper">
+  <h2 class="title">Semua Produk</h2>
   <hr>
   <div class="main-product">
     <?php if($recent->num_rows() > 0){ ?>
@@ -133,4 +103,34 @@
   <?php if($allProducts->num_rows() > 12){ ?>
     <a href="<?= base_url(); ?>products"><button class="more">Selengkapnya</button></a>
   <?php } ?>
+</div>
+<?php } ?>
+
+<div class="product-wrapper best-product">
+  <h2 class="title">Produk terlaris</h2>
+  <hr>
+  <div class="recent-product main-product">
+  <?php foreach($best->result_array() as $p): ?>
+    <div>
+        <a href="<?= base_url(); ?>p/<?= $p['slug']; ?>">
+          <div class="card">
+            <img src="<?= base_url(); ?>assets/images/product/<?= $p['img']; ?>" class="card-img-top" >
+            <div class="card-body">
+              <p class="card-text mb-0"><?= $p['title']; ?></p>
+              <?php if($setting['promo'] == 1){ ?>
+              <?php if($p['promo_price'] == 0){ ?>
+                    <p class="newPrice">Rp <?= str_replace(",",".",number_format($p['price'])); ?></p>
+                <?php }else{ ?>
+                    <p class="oldPrice mb-0">Rp <?= str_replace(",",".",number_format($p['price'])); ?></p>
+                    <p class="newPrice">Rp <?= str_replace(",",".",number_format($p['promo_price'])); ?></p>
+                <?php } ?>
+                <?php }else{ ?>
+                    <p class="newPrice">Rp <?= str_replace(",",".",number_format($p['price'])); ?></p>
+                <?php } ?>
+            </div>
+          </div>
+        </a>
+    </div>
+  <?php endforeach; ?>
+  </div>
 </div>
